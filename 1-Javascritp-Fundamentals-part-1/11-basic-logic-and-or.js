@@ -11,4 +11,3 @@ else{
     console.log("no licance good vision");
 }
 
-console.log();
