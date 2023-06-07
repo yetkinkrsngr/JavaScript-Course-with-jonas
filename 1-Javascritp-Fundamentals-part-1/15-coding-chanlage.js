@@ -12,3 +12,27 @@
 // Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
 
 // TEST DATA: Test with different bill values: 275, 40, and 430
+
+
+/* Write your code below. Good luck! 🙂 */
+
+// let bill = [275,40,430];
+// let i=0;
+// while(bill.length>=i){
+// i++;
+
+
+// if(bill[i]>=50 && bill[i]<=300 ){
+// let tip=0.20;
+// let total=(tip*bill[i])+bill[i];
+// console.log(`your total must pay  ${total}`);
+// }
+// else{
+//  let tip=0.15;
+//  let total=(tip*bill[i])+bill[i]
+//  console.log(`your total must pay  ${total}`);
+// }
+// }
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
