@@ -1,6 +1,5 @@
 console.log("yetkin");
 console.log(23);
-
 let firstName="yetkin";
 console.log("ilk değişken : "+firstName);
 
@@ -15,6 +14,10 @@ console.log(country," ",continent," ",population);
 
 //var= block değildir. bir daha çağrılıp atama yapılabilir 
 var name="yetkin";
-
+name="hakan";
 //const= değiştiremez veri türü block-scopedur.
 const pi=3.14;
+var soyad;
+let street;
+const city="izmir";
+

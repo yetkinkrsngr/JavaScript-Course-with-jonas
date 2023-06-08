@@ -1,8 +1,9 @@
-const thisYear=2023;
-const ageYetkin=thisYear-1992;
-const ageSerif=thisYear-1959;
-const ageSevim=thisYear-1988;
-const ageCemile=thisYear-1965;
+const thisYear=new Date();
+const thisYear2=thisYear.getFullYear();
+const ageYetkin=thisYear2-1992;
+const ageSerif=thisYear2-1959;
+const ageSevim=thisYear2-1988;
+const ageCemile=thisYear2-1965;
 
 console.log("yetkin : "+ageYetkin);
 console.log("Serif : "+ageSerif);
