@@ -16,11 +16,10 @@ const calcTip = function (bill) {
   }
   let bills=[22,295,176,440,37,105,10,1100,86,52];
   let tips =new Array();
-  const total= new Array();
+  let total= new Array();
   for(let sum=0;sum<=bills.length;sum++){
-    let calcu=calcTip(bills[sum]);
-    tips.concat(calcu);
-    let totals=tips[sum]+bills[sum];
-    total.concat(totals);
-    console.log();
+    let tip=calcTip(bills);
+    tips.concat(tip);
+    total=tips[sum]+bills[sum];
 }
+ console.log(total);
