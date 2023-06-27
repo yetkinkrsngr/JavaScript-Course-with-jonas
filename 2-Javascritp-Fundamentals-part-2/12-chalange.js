@@ -18,11 +18,21 @@ const calcTip = function (bill) {
 let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tips = new Array();
 let total = new Array();
-// DO
-// BUG
-for (let sum = 0; sum <= bills.length; sum++) {
-  let tip = calcTip(bills);
-  tips.concat(tip);
-  total = tips[sum] + bills[sum];
+for (let sum = 0; sum < bills.length; sum++) {
+  let tips = calcTip(bills[sum]);
+  total.push(tips + bills[sum]);
+  console.log(
+    `Bills are ${bills[sum]} tips are : ${tips} and Total Pay is ${total[sum]}`
+  );
+  console.log("-----------------");
 }
-console.log(total);
+let toplam = 0;
+const arr = function (arr) {
+  for (let i = 0; i < total.length; i++) {
+    toplam += total[i];
+  }
+  let average = toplam / total.length;
+  console.log(`Average of Tips:${average}`);
+};
+
+arr();
