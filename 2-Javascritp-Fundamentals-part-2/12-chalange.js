@@ -1,3 +1,4 @@
+"use strict";
 // CHALLENGE #4
 // Let's improve Steven's tip calculator even more, this time using loops!
 // Your tasks:
@@ -12,14 +13,14 @@
 // Call the function with the totals array.
 // 👋 OPTIONAL: You can watch my solution in video format in the next lecture
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-  }
-  let bills=[22,295,176,440,37,105,10,1100,86,52];
-  let tips =new Array();
-  let total= new Array();
-  for(let sum=0;sum<=bills.length;sum++){
-    let tip=calcTip(bills);
-    tips.concat(tip);
-    total=tips[sum]+bills[sum];
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = new Array();
+let total = new Array();
+for (let sum = 0; sum <= bills.length; sum++) {
+  let tip = calcTip(bills);
+  tips.concat(tip);
+  total = tips[sum] + bills[sum];
 }
- console.log(total);
+console.log(total);
