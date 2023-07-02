@@ -1,5 +1,5 @@
 "use strict";
-let testData1 = [17, 21, 23];
+let testData1 = [17, 21, 23, 25, 18, 19, 15, 35];
 const temp = function () {
   for (let i = 0; i < testData1.length; i++) {
     if (testData1[i] < 20) {
