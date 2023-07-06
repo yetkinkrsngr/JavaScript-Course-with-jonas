@@ -20,6 +20,13 @@ body {
   justify-content: center;
   background: linear-gradient(to top left, #28b487, #7dd56f);
 }
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
 
 .show-modal {
   font-size: 2rem;
